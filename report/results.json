@@ -1,0 +1,760 @@
+{
+  "config": {
+    "train_weeks": [
+      13,
+      60
+    ],
+    "test_weeks": [
+      65,
+      73
+    ],
+    "horizon_weeks": 4,
+    "nudges_per_seller_week": 2,
+    "frozen_models_sha256_12": "3ef7a6ac25f4"
+  },
+  "data": {
+    "deals": 5557,
+    "train_snapshots": 48387,
+    "test_snapshots": 9597,
+    "test_base_rate": 0.366
+  },
+  "main": {
+    "activity_rule": {
+      "auc": 0.538,
+      "nudges": 1440,
+      "nudges_per_seller_week": 2.0,
+      "precision": 0.448,
+      "events": 650,
+      "recall": 0.437,
+      "recall_by_amount": 0.513,
+      "median_lead_days": 21.0
+    },
+    "crm_fields_model": {
+      "auc": 0.882,
+      "nudges": 1440,
+      "nudges_per_seller_week": 2.0,
+      "precision": 0.879,
+      "events": 650,
+      "recall": 0.566,
+      "recall_by_amount": 0.576,
+      "median_lead_days": 21.0
+    },
+    "radar": {
+      "auc": 0.899,
+      "nudges": 1440,
+      "nudges_per_seller_week": 2.0,
+      "precision": 0.87,
+      "events": 650,
+      "recall": 0.614,
+      "recall_by_amount": 0.607,
+      "median_lead_days": 21.0
+    }
+  },
+  "sensitivity_by_signal_strength": {
+    "1.0": {
+      "activity_rule": {
+        "auc": 0.538,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.448,
+        "events": 650,
+        "recall": 0.437,
+        "recall_by_amount": 0.513,
+        "median_lead_days": 21.0
+      },
+      "crm_fields_model": {
+        "auc": 0.882,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.879,
+        "events": 650,
+        "recall": 0.566,
+        "recall_by_amount": 0.576,
+        "median_lead_days": 21.0
+      },
+      "radar": {
+        "auc": 0.899,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.87,
+        "events": 650,
+        "recall": 0.614,
+        "recall_by_amount": 0.607,
+        "median_lead_days": 21.0
+      }
+    },
+    "0.5": {
+      "activity_rule": {
+        "auc": 0.52,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.392,
+        "events": 645,
+        "recall": 0.398,
+        "recall_by_amount": 0.487,
+        "median_lead_days": 21.0
+      },
+      "crm_fields_model": {
+        "auc": 0.89,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.857,
+        "events": 645,
+        "recall": 0.592,
+        "recall_by_amount": 0.58,
+        "median_lead_days": 21.0
+      },
+      "radar": {
+        "auc": 0.896,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.863,
+        "events": 645,
+        "recall": 0.619,
+        "recall_by_amount": 0.62,
+        "median_lead_days": 21.0
+      }
+    },
+    "0.25": {
+      "activity_rule": {
+        "auc": 0.506,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.388,
+        "events": 639,
+        "recall": 0.365,
+        "recall_by_amount": 0.425,
+        "median_lead_days": 21.0
+      },
+      "crm_fields_model": {
+        "auc": 0.89,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.862,
+        "events": 639,
+        "recall": 0.592,
+        "recall_by_amount": 0.588,
+        "median_lead_days": 21.0
+      },
+      "radar": {
+        "auc": 0.894,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.868,
+        "events": 639,
+        "recall": 0.603,
+        "recall_by_amount": 0.611,
+        "median_lead_days": 21.0
+      }
+    },
+    "0.0": {
+      "activity_rule": {
+        "auc": 0.506,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.356,
+        "events": 635,
+        "recall": 0.369,
+        "recall_by_amount": 0.445,
+        "median_lead_days": 21.0
+      },
+      "crm_fields_model": {
+        "auc": 0.894,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.887,
+        "events": 635,
+        "recall": 0.598,
+        "recall_by_amount": 0.617,
+        "median_lead_days": 21.0
+      },
+      "radar": {
+        "auc": 0.894,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.889,
+        "events": 635,
+        "recall": 0.602,
+        "recall_by_amount": 0.618,
+        "median_lead_days": 21.0
+      }
+    }
+  },
+  "seeds": {
+    "7": {
+      "activity_rule": {
+        "auc": 0.538,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.448,
+        "events": 650,
+        "recall": 0.437,
+        "recall_by_amount": 0.513,
+        "median_lead_days": 21.0
+      },
+      "crm_fields_model": {
+        "auc": 0.882,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.879,
+        "events": 650,
+        "recall": 0.566,
+        "recall_by_amount": 0.576,
+        "median_lead_days": 21.0
+      },
+      "radar": {
+        "auc": 0.899,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.87,
+        "events": 650,
+        "recall": 0.614,
+        "recall_by_amount": 0.607,
+        "median_lead_days": 21.0
+      }
+    },
+    "11": {
+      "activity_rule": {
+        "auc": 0.522,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.447,
+        "events": 668,
+        "recall": 0.418,
+        "recall_by_amount": 0.464,
+        "median_lead_days": 21.0
+      },
+      "crm_fields_model": {
+        "auc": 0.897,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.883,
+        "events": 668,
+        "recall": 0.605,
+        "recall_by_amount": 0.581,
+        "median_lead_days": 21.0
+      },
+      "radar": {
+        "auc": 0.908,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.879,
+        "events": 668,
+        "recall": 0.635,
+        "recall_by_amount": 0.608,
+        "median_lead_days": 21.0
+      }
+    },
+    "23": {
+      "activity_rule": {
+        "auc": 0.525,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.417,
+        "events": 718,
+        "recall": 0.373,
+        "recall_by_amount": 0.485,
+        "median_lead_days": 21.0
+      },
+      "crm_fields_model": {
+        "auc": 0.889,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.898,
+        "events": 718,
+        "recall": 0.574,
+        "recall_by_amount": 0.581,
+        "median_lead_days": 14.0
+      },
+      "radar": {
+        "auc": 0.904,
+        "nudges": 1440,
+        "nudges_per_seller_week": 2.0,
+        "precision": 0.903,
+        "events": 718,
+        "recall": 0.577,
+        "recall_by_amount": 0.614,
+        "median_lead_days": 21.0
+      }
+    }
+  },
+  "posthoc_by_signal_strength": {
+    "1.0": {
+      "hidden_risk": {
+        "snapshots": 7111,
+        "base_rate": 0.217,
+        "activity_rule": {
+          "auc": 0.528,
+          "precision": 0.264,
+          "positive_deals_flagged": 0.367
+        },
+        "crm_fields_model": {
+          "auc": 0.803,
+          "precision": 0.519,
+          "positive_deals_flagged": 0.612
+        },
+        "radar": {
+          "auc": 0.834,
+          "precision": 0.526,
+          "positive_deals_flagged": 0.63
+        }
+      },
+      "zombies": {
+        "zombie_snapshots": 356,
+        "open_snapshots": 9597,
+        "median_weeks_dead_before_marked_lost": 0.0,
+        "zombie_amount_in_commit_and_best_case_week_73": 736500.0,
+        "activity_rule": {
+          "auc": 0.633,
+          "zombie_deals_flagged": 63,
+          "median_weeks_flagged_before_marked_lost": 2.0
+        },
+        "crm_fields_model": {
+          "auc": 0.783,
+          "zombie_deals_flagged": 126,
+          "median_weeks_flagged_before_marked_lost": 1.0
+        },
+        "radar": {
+          "auc": 0.838,
+          "zombie_deals_flagged": 146,
+          "median_weeks_flagged_before_marked_lost": 1.0
+        },
+        "zombie_deals": 203
+      }
+    },
+    "0.5": {
+      "hidden_risk": {
+        "snapshots": 6891,
+        "base_rate": 0.204,
+        "activity_rule": {
+          "auc": 0.519,
+          "precision": 0.215,
+          "positive_deals_flagged": 0.342
+        },
+        "crm_fields_model": {
+          "auc": 0.81,
+          "precision": 0.493,
+          "positive_deals_flagged": 0.625
+        },
+        "radar": {
+          "auc": 0.822,
+          "precision": 0.495,
+          "positive_deals_flagged": 0.633
+        }
+      },
+      "zombies": {
+        "zombie_snapshots": 420,
+        "open_snapshots": 9595,
+        "median_weeks_dead_before_marked_lost": 0.0,
+        "zombie_amount_in_commit_and_best_case_week_73": 925900.0,
+        "activity_rule": {
+          "auc": 0.586,
+          "zombie_deals_flagged": 47,
+          "median_weeks_flagged_before_marked_lost": 2.0
+        },
+        "crm_fields_model": {
+          "auc": 0.761,
+          "zombie_deals_flagged": 119,
+          "median_weeks_flagged_before_marked_lost": 2.0
+        },
+        "radar": {
+          "auc": 0.794,
+          "zombie_deals_flagged": 132,
+          "median_weeks_flagged_before_marked_lost": 2.0
+        },
+        "zombie_deals": 235
+      }
+    },
+    "0.25": {
+      "hidden_risk": {
+        "snapshots": 7115,
+        "base_rate": 0.196,
+        "activity_rule": {
+          "auc": 0.489,
+          "precision": 0.204,
+          "positive_deals_flagged": 0.308
+        },
+        "crm_fields_model": {
+          "auc": 0.814,
+          "precision": 0.501,
+          "positive_deals_flagged": 0.644
+        },
+        "radar": {
+          "auc": 0.821,
+          "precision": 0.51,
+          "positive_deals_flagged": 0.653
+        }
+      },
+      "zombies": {
+        "zombie_snapshots": 432,
+        "open_snapshots": 9863,
+        "median_weeks_dead_before_marked_lost": 0.0,
+        "zombie_amount_in_commit_and_best_case_week_73": 1042800.0,
+        "activity_rule": {
+          "auc": 0.625,
+          "zombie_deals_flagged": 60,
+          "median_weeks_flagged_before_marked_lost": 1.0
+        },
+        "crm_fields_model": {
+          "auc": 0.768,
+          "zombie_deals_flagged": 125,
+          "median_weeks_flagged_before_marked_lost": 1.0
+        },
+        "radar": {
+          "auc": 0.78,
+          "zombie_deals_flagged": 133,
+          "median_weeks_flagged_before_marked_lost": 1.0
+        },
+        "zombie_deals": 213
+      }
+    },
+    "0.0": {
+      "hidden_risk": {
+        "snapshots": 7277,
+        "base_rate": 0.199,
+        "activity_rule": {
+          "auc": 0.49,
+          "precision": 0.197,
+          "positive_deals_flagged": 0.304
+        },
+        "crm_fields_model": {
+          "auc": 0.821,
+          "precision": 0.503,
+          "positive_deals_flagged": 0.633
+        },
+        "radar": {
+          "auc": 0.821,
+          "precision": 0.506,
+          "positive_deals_flagged": 0.633
+        }
+      },
+      "zombies": {
+        "zombie_snapshots": 417,
+        "open_snapshots": 9926,
+        "median_weeks_dead_before_marked_lost": 0.0,
+        "zombie_amount_in_commit_and_best_case_week_73": 902600.0,
+        "activity_rule": {
+          "auc": 0.544,
+          "zombie_deals_flagged": 50,
+          "median_weeks_flagged_before_marked_lost": 1.0
+        },
+        "crm_fields_model": {
+          "auc": 0.811,
+          "zombie_deals_flagged": 132,
+          "median_weeks_flagged_before_marked_lost": 1.0
+        },
+        "radar": {
+          "auc": 0.811,
+          "zombie_deals_flagged": 135,
+          "median_weeks_flagged_before_marked_lost": 1.0
+        },
+        "zombie_deals": 223
+      }
+    }
+  },
+  "posthoc_fresh_seeds": {
+    "11": {
+      "signal": {
+        "hidden_risk": {
+          "snapshots": 7383,
+          "base_rate": 0.193,
+          "activity_rule": {
+            "auc": 0.501,
+            "precision": 0.242,
+            "positive_deals_flagged": 0.369
+          },
+          "crm_fields_model": {
+            "auc": 0.819,
+            "precision": 0.502,
+            "positive_deals_flagged": 0.643
+          },
+          "radar": {
+            "auc": 0.841,
+            "precision": 0.512,
+            "positive_deals_flagged": 0.667
+          }
+        },
+        "zombies": {
+          "zombie_snapshots": 487,
+          "open_snapshots": 10240,
+          "median_weeks_dead_before_marked_lost": 0.0,
+          "zombie_amount_in_commit_and_best_case_week_73": 1034700.0,
+          "activity_rule": {
+            "auc": 0.622,
+            "zombie_deals_flagged": 65,
+            "median_weeks_flagged_before_marked_lost": 2.0
+          },
+          "crm_fields_model": {
+            "auc": 0.801,
+            "zombie_deals_flagged": 135,
+            "median_weeks_flagged_before_marked_lost": 1.5
+          },
+          "radar": {
+            "auc": 0.85,
+            "zombie_deals_flagged": 166,
+            "median_weeks_flagged_before_marked_lost": 1.0
+          },
+          "zombie_deals": 242
+        }
+      },
+      "null": {
+        "hidden_risk": {
+          "snapshots": 6608,
+          "base_rate": 0.191,
+          "activity_rule": {
+            "auc": 0.468,
+            "precision": 0.194,
+            "positive_deals_flagged": 0.365
+          },
+          "crm_fields_model": {
+            "auc": 0.814,
+            "precision": 0.459,
+            "positive_deals_flagged": 0.677
+          },
+          "radar": {
+            "auc": 0.814,
+            "precision": 0.463,
+            "positive_deals_flagged": 0.684
+          }
+        },
+        "zombies": {
+          "zombie_snapshots": 359,
+          "open_snapshots": 9127,
+          "median_weeks_dead_before_marked_lost": 0.0,
+          "zombie_amount_in_commit_and_best_case_week_73": 317700.0,
+          "activity_rule": {
+            "auc": 0.582,
+            "zombie_deals_flagged": 45,
+            "median_weeks_flagged_before_marked_lost": 1.0
+          },
+          "crm_fields_model": {
+            "auc": 0.8,
+            "zombie_deals_flagged": 116,
+            "median_weeks_flagged_before_marked_lost": 1.0
+          },
+          "radar": {
+            "auc": 0.8,
+            "zombie_deals_flagged": 117,
+            "median_weeks_flagged_before_marked_lost": 1.0
+          },
+          "zombie_deals": 193
+        }
+      }
+    },
+    "23": {
+      "signal": {
+        "hidden_risk": {
+          "snapshots": 7274,
+          "base_rate": 0.214,
+          "activity_rule": {
+            "auc": 0.504,
+            "precision": 0.232,
+            "positive_deals_flagged": 0.345
+          },
+          "crm_fields_model": {
+            "auc": 0.803,
+            "precision": 0.506,
+            "positive_deals_flagged": 0.629
+          },
+          "radar": {
+            "auc": 0.832,
+            "precision": 0.523,
+            "positive_deals_flagged": 0.656
+          }
+        },
+        "zombies": {
+          "zombie_snapshots": 425,
+          "open_snapshots": 10142,
+          "median_weeks_dead_before_marked_lost": 0.0,
+          "zombie_amount_in_commit_and_best_case_week_73": 1087900.0,
+          "activity_rule": {
+            "auc": 0.601,
+            "zombie_deals_flagged": 67,
+            "median_weeks_flagged_before_marked_lost": 2.0
+          },
+          "crm_fields_model": {
+            "auc": 0.758,
+            "zombie_deals_flagged": 125,
+            "median_weeks_flagged_before_marked_lost": 1.0
+          },
+          "radar": {
+            "auc": 0.818,
+            "zombie_deals_flagged": 145,
+            "median_weeks_flagged_before_marked_lost": 1.0
+          },
+          "zombie_deals": 238
+        }
+      },
+      "null": {
+        "hidden_risk": {
+          "snapshots": 7245,
+          "base_rate": 0.202,
+          "activity_rule": {
+            "auc": 0.495,
+            "precision": 0.211,
+            "positive_deals_flagged": 0.313
+          },
+          "crm_fields_model": {
+            "auc": 0.825,
+            "precision": 0.533,
+            "positive_deals_flagged": 0.67
+          },
+          "radar": {
+            "auc": 0.825,
+            "precision": 0.534,
+            "positive_deals_flagged": 0.67
+          }
+        },
+        "zombies": {
+          "zombie_snapshots": 537,
+          "open_snapshots": 10157,
+          "median_weeks_dead_before_marked_lost": 0.0,
+          "zombie_amount_in_commit_and_best_case_week_73": 1142400.0,
+          "activity_rule": {
+            "auc": 0.575,
+            "zombie_deals_flagged": 67,
+            "median_weeks_flagged_before_marked_lost": 2.0
+          },
+          "crm_fields_model": {
+            "auc": 0.816,
+            "zombie_deals_flagged": 149,
+            "median_weeks_flagged_before_marked_lost": 2.0
+          },
+          "radar": {
+            "auc": 0.816,
+            "zombie_deals_flagged": 150,
+            "median_weeks_flagged_before_marked_lost": 2.0
+          },
+          "zombie_deals": 262
+        }
+      }
+    }
+  },
+  "radar_coefficients_standardized": {
+    "stage_idx": -0.49,
+    "weeks_in_stage": -0.02,
+    "crm_pushes": -0.01,
+    "weeks_to_close": -2.3,
+    "past_due": -0.13,
+    "log_amount": 0.0,
+    "weeks_since_logged": -0.14,
+    "deal_age": 0.15,
+    "buyer_emails_2w": -0.44,
+    "buyer_email_trend": 0.08,
+    "buyer_latency_2w": 0.24,
+    "meetings_held_4w": -0.17,
+    "meetings_cancelled_4w": 0.2,
+    "stakeholders_4w": -0.12,
+    "seller_emails_2w": -0.02,
+    "buyer_share_2w": 0.07
+  },
+  "median_push_weeks": 5,
+  "drafted_updates": {
+    "distinct_pushes_scored": 352,
+    "median_abs_error_weeks_draft": 2.0,
+    "median_abs_error_weeks_unchanged": 5.0
+  },
+  "example_nudges_week_73": [
+    "D5182 ($232K, Negotiate, CRM close week 76): 1 buyer email in two weeks, 2 meetings cancelled in four, 4 buyer stakeholders engaged; last logged activity 0 weeks ago. Suggested update: move close to week 81. [Confirm] [Edit] [Not now]",
+    "D4554 ($126K, Qualify, CRM close week 77): 1 buyer email in two weeks, 0 meetings cancelled in four, 1 buyer stakeholder engaged; last logged activity 0 weeks ago. Suggested update: move close to week 82. [Confirm] [Edit] [Not now]",
+    "D6005 ($118K, Qualify, CRM close week 77): 0 buyer emails in two weeks, 1 meeting cancelled in four, 1 buyer stakeholder engaged; last logged activity 0 weeks ago. Buyer has gone quiet. Still active? [Yes, move close to week 82] [Mark lost] [Not now]"
+  ],
+  "forecast_notes": {
+    "notes": [
+      {
+        "week": 70,
+        "source": "template",
+        "note": "Week 70, Q6. Commit is $8.4M, down $891K from last week; best case is $12.1M. Won to date this quarter: $9.0M. 5 deals worth $214K slipped out of the quarter, led by D4853 ($147K, close moved from week 70 to week 78). 58 deals worth $3.6M were marked lost. Radar flags 10 commit deals worth $341K; review them before the forecast call.",
+        "ok": true,
+        "issues": [],
+        "checked": 16
+      },
+      {
+        "week": 70,
+        "source": "llm",
+        "note": "Commit fell $891K [F2] this week to $8.4M [F1], and best case dropped $1.2M [F4] to $12.1M [F3]. That leaves less upside in quarter 6 [F13] as of week 70 [F12]. Losses were heavy, with 58 deals [F8] worth $3.6M [F9] marked lost. Slippage was lighter: 5 deals [F6] for $214K [F7] moved out of the quarter. The largest was D4853 at $147K [F15], which moved from week 70 [F16] to week 78 [F17]. Won quarter to date is $9.0M [F5]. Radar flags 10 commit deals [F10] worth $341K [F11]. Test each one on the call so they don't slip next week.",
+        "ok": true,
+        "issues": [],
+        "checked": 17
+      },
+      {
+        "week": 71,
+        "source": "template",
+        "note": "Week 71, Q6. Commit is $7.9M, down $557K from last week; best case is $10.5M. Won to date this quarter: $10.3M. 14 deals worth $1.3M slipped out of the quarter, led by D4729 ($335K, close moved from week 71 to week 79). 57 deals worth $2.7M were marked lost. Radar flags 8 commit deals worth $236K; review them before the forecast call.",
+        "ok": true,
+        "issues": [],
+        "checked": 16
+      },
+      {
+        "week": 71,
+        "source": "llm",
+        "note": "Commit fell $557K [F2] this week to $7.9M [F1], and best case dropped $1.7M [F4] to $10.5M [F3], so the quarter's upside is shrinking faster than commit. This week 14 deals [F6] worth $1.3M [F7] slipped out of quarter. The largest was D4729 [F14] at $335K [F15], pushed from week 71 [F16] to week 79 [F17]. Another 57 deals [F8] worth $2.7M [F9] were marked lost. Won quarter to date stands at $10.3M [F5]. Radar flagged 8 commit deals [F10] worth $236K [F11]. Pressure-test those on the call before commit moves again.",
+        "ok": true,
+        "issues": [],
+        "checked": 15
+      },
+      {
+        "week": 72,
+        "source": "template",
+        "note": "Week 72, Q6. Commit is $7.2M, down $684K from last week; best case is $9.6M. Won to date this quarter: $11.2M. 24 deals worth $1.2M slipped out of the quarter, led by D4806 ($156K, close moved from week 72 to week 79). 52 deals worth $2.5M were marked lost. Radar flags 11 commit deals worth $398K; review them before the forecast call.",
+        "ok": true,
+        "issues": [],
+        "checked": 16
+      },
+      {
+        "week": 72,
+        "source": "llm",
+        "note": "Week 72 [F12], Q6 [F13]: commit fell $684K [F2] to $7.2M [F1] and best case fell $866K [F4] to $9.6M [F3], so the quarter tightened at both ends. This week 52 deals [F8] worth $2.5M [F9] were marked lost and 24 deals [F6] worth $1.2M [F7] slipped out of quarter. The largest slip was D4806 [F14] at $156K [F15], pushed from week 72 [F16] to week 79 [F17]. Won quarter to date stands at $11.2M [F5]. The open risk sits inside commit: radar has flagged 11 deals [F10] worth $398K [F11]. Have owners defend or downgrade those before we call the number.",
+        "ok": true,
+        "issues": [],
+        "checked": 17
+      },
+      {
+        "week": 73,
+        "source": "template",
+        "note": "Week 73, Q6. Commit is $6.8M, down $429K from last week; best case is $8.5M. Won to date this quarter: $12.3M. 21 deals worth $1.0M slipped out of the quarter, led by D5044 ($201K, close moved from week 73 to week 79). 39 deals worth $1.8M were marked lost. Radar flags 22 commit deals worth $944K; review them before the forecast call.",
+        "ok": true,
+        "issues": [],
+        "checked": 16
+      },
+      {
+        "week": 73,
+        "source": "llm",
+        "note": "Commit for quarter 6 [F13] fell $429K [F2] this week to $6.8M [F1], and best case dropped $1.2M [F4] to $8.5M [F3]. Won quarter to date stands at $12.3M [F5]. Also this week, 39 [F8] deals worth $1.8M [F9] were marked lost and 21 [F6] deals worth $1.0M [F7] slipped out of the quarter. The largest slip was D5044 [F14] at $201K [F15], which moved from week 73 [F16] to week 79 [F17]. The biggest risk for the call is that radar flags 22 [F10] commit deals worth $944K [F11]. Pressure-test those before accepting the $6.8M [F1] commit, because that is where the remaining commit risk sits.",
+        "ok": true,
+        "issues": [],
+        "checked": 17
+      }
+    ],
+    "mutations": {
+      "template": {
+        "number": {
+          "planted": 160,
+          "caught": 157
+        },
+        "direction": {
+          "planted": 160,
+          "caught": 160
+        },
+        "entity": {
+          "planted": 160,
+          "caught": 160
+        }
+      },
+      "llm": {
+        "number": {
+          "planted": 160,
+          "caught": 160
+        },
+        "direction": {
+          "planted": 160,
+          "caught": 160
+        },
+        "entity": {
+          "planted": 160,
+          "caught": 160
+        }
+      }
+    }
+  }
+}
